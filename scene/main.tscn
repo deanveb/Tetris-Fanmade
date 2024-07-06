@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://1gcivbxcy7ae"]
 
 [node name="Main" type="Node2D"]
+
+[node name="menu" type="CanvasLayer" parent="."]
+
+[node name="stage" type="Node2D" parent="."]
+
+[node name="Ground" type="StaticBody2D" parent="stage"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stage/Ground"]
