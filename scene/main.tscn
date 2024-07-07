@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://1gcivbxcy7ae"]
+[gd_scene load_steps=3 format=3 uid="uid://1gcivbxcy7ae"]
+
+[ext_resource type="PackedScene" uid="uid://bpg2pvkjsn66p" path="res://scene/game_object/ground.tscn" id="1_weco1"]
+[ext_resource type="PackedScene" uid="uid://dsfenpwesx2d0" path="res://scene/game_object/player.tscn" id="2_0klvn"]
 
 [node name="Main" type="Node2D"]
 
@@ -6,6 +9,6 @@
 
 [node name="stage" type="Node2D" parent="."]
 
-[node name="Ground" type="StaticBody2D" parent="stage"]
+[node name="Ground" parent="stage" instance=ExtResource("1_weco1")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="stage/Ground"]
+[node name="Player" parent="stage" instance=ExtResource("2_0klvn")]

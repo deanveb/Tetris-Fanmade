@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsfenpwesx2d0"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_r27xq"]
+[ext_resource type="Texture2D" uid="uid://cw5dpjdkvgsc2" path="res://tetris-assets/block/square_block.png" id="2_3hkmr"]
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(513, 50)
+scale = Vector2(3, 3)
+script = ExtResource("1_r27xq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_3hkmr")
+
+[node name="GravityTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="MovingTimer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="GravityTimer" to="." method="_on_gravity_timer_timeout"]
+[connection signal="timeout" from="MovingTimer" to="." method="_on_moving_timer_timeout"]
