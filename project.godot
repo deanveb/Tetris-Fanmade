@@ -27,7 +27,6 @@ enabled=PackedStringArray()
 
 [gui]
 
-theme/custom_font="res://flappy-bird-assets-1.1.0/flappy-font.ttf"
 theme/default_font_antialiasing=0
 
 [input]

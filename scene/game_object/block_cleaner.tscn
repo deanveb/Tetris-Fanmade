@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr5hv41pe2274"]
+
+[ext_resource type="Script" path="res://script/game_object/block_cleaner.gd" id="1_0lw03"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j0tk1"]
+
+[node name="BlockCleaner" type="Area2D"]
+scale = Vector2(2.203, 7.744)
+script = ExtResource("1_0lw03")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.00722, 0.154227)
+shape = SubResource("RectangleShape2D_j0tk1")

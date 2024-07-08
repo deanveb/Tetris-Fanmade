@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://1gcivbxcy7ae"]
+[gd_scene load_steps=4 format=3 uid="uid://1gcivbxcy7ae"]
 
 [ext_resource type="PackedScene" uid="uid://bpg2pvkjsn66p" path="res://scene/game_object/ground.tscn" id="1_weco1"]
 [ext_resource type="PackedScene" uid="uid://dsfenpwesx2d0" path="res://scene/game_object/player.tscn" id="2_0klvn"]
+[ext_resource type="PackedScene" uid="uid://cr5hv41pe2274" path="res://scene/game_object/block_cleaner.tscn" id="3_o6baa"]
 
 [node name="Main" type="Node2D"]
 
@@ -12,3 +13,7 @@
 [node name="Ground" parent="stage" instance=ExtResource("1_weco1")]
 
 [node name="Player" parent="stage" instance=ExtResource("2_0klvn")]
+
+[node name="Area2D" parent="stage" instance=ExtResource("3_o6baa")]
+position = Vector2(384, 62)
+scale = Vector2(2.20268, 7.74444)

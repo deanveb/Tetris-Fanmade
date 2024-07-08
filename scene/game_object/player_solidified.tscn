@@ -1,15 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dsfenpwesx2d0"]
+[gd_scene format=3 uid="uid://cvdno3yufod4c"]
 
-[ext_resource type="Script" path="res://Player.gd" id="1_r27xq"]
-[ext_resource type="Texture2D" uid="uid://4mtulln73rsa" path="res://tetris-assets/block/left_z_block.png" id="2_c5arv"]
-
-[node name="Player" type="CharacterBody2D"]
+[node name="PlayerSolidified" type="StaticBody2D"]
 position = Vector2(513, 50)
 scale = Vector2(3, 3)
-script = ExtResource("1_r27xq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_c5arv")
 
 [node name="GravityTimer" type="Timer" parent="."]
 wait_time = 0.5
