@@ -1,19 +1,23 @@
 [gd_scene load_steps=4 format=3 uid="uid://1gcivbxcy7ae"]
 
+[ext_resource type="Script" path="res://script/level/stage.gd" id="1_kjg75"]
 [ext_resource type="PackedScene" uid="uid://bpg2pvkjsn66p" path="res://scene/game_object/ground.tscn" id="1_weco1"]
-[ext_resource type="PackedScene" uid="uid://dsfenpwesx2d0" path="res://scene/game_object/player.tscn" id="2_0klvn"]
-[ext_resource type="PackedScene" uid="uid://cr5hv41pe2274" path="res://scene/game_object/block_cleaner.tscn" id="3_o6baa"]
+[ext_resource type="Texture2D" uid="uid://btkwi0t07hqbu" path="res://tetris-assets/block/square_block.png" id="3_1v4ig"]
 
 [node name="Main" type="Node2D"]
 
 [node name="menu" type="CanvasLayer" parent="."]
 
 [node name="stage" type="Node2D" parent="."]
+script = ExtResource("1_kjg75")
 
 [node name="Ground" parent="stage" instance=ExtResource("1_weco1")]
+position = Vector2(534, 626)
 
-[node name="Player" parent="stage" instance=ExtResource("2_0klvn")]
+[node name="SpawnPoint" type="Marker2D" parent="stage"]
+z_index = -1
+position = Vector2(576, 50)
 
-[node name="Area2D" parent="stage" instance=ExtResource("3_o6baa")]
-position = Vector2(384, 62)
-scale = Vector2(2.20268, 7.74444)
+[node name="Sprite2D" type="Sprite2D" parent="stage/SpawnPoint"]
+visible = false
+texture = ExtResource("3_1v4ig")

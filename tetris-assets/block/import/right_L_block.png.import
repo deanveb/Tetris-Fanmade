@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b85t5quwo07a6"
-path="res://.godot/imported/left_z_block.png-1bbc0ec7979e1bcd6aa39fbd4ded295b.ctex"
+uid="uid://4jkfo15ndrcg"
+path="res://.godot/imported/right_L_block.png-e7cd878c48276378f897acd93b1eed22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tetris-assets/block/left_z_block.png"
-dest_files=["res://.godot/imported/left_z_block.png-1bbc0ec7979e1bcd6aa39fbd4ded295b.ctex"]
+source_file="res://tetris-assets/block/right_L_block.png"
+dest_files=["res://.godot/imported/right_L_block.png-e7cd878c48276378f897acd93b1eed22.ctex"]
 
 [params]
 

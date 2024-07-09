@@ -1,10 +1,14 @@
-[gd_scene format=3 uid="uid://cvdno3yufod4c"]
+[gd_scene load_steps=2 format=3 uid="uid://cvdno3yufod4c"]
+
+[ext_resource type="Texture2D" uid="uid://b85t5quwo07a6" path="res://tetris-assets/block/left_z_block.png" id="1_ghbl0"]
 
 [node name="PlayerSolidified" type="StaticBody2D"]
 position = Vector2(513, 50)
 scale = Vector2(3, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, 8)
+texture = ExtResource("1_ghbl0")
 
 [node name="GravityTimer" type="Timer" parent="."]
 wait_time = 0.5

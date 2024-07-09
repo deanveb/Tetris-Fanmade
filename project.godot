@@ -21,6 +21,10 @@ config/icon="res://icon.svg"
 window/size/always_on_top=true
 window/stretch/mode="viewport"
 
+[editor]
+
+movie_writer/movie_file="C:/Users/Annhi/Documents/Godot movies/record.avi"
+
 [editor_plugins]
 
 enabled=PackedStringArray()
